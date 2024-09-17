@@ -25,8 +25,7 @@ namespace Order_Service.Infrastructure.Data
                 .HasForeignKey(o => o.CustomerId);
 
             modelBuilder.Entity<Customer>().HasData(
-                new { Id = 1, Name = "Vishal Jaiswal", Email = "vishal.vj9386@gmail.com" },
-                new { Id = 2, Name = "Deeksha Sharma", Email = "deeksha.sharma@concentrix.com" }
+                new { Id = 1, Name = "Vishal Jaiswal", Email = "vishal.vj9386@gmail.com" }
             );
 
             modelBuilder.Entity<Product>().HasData(
